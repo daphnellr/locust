@@ -3,9 +3,9 @@ import os
 import pathlib
 import datetime
 from itertools import chain
-from .stats import sort_stats
-from . import stats as stats_module
-from .user.inspectuser import get_ratio
+from locust.stats import sort_stats
+from locust import stats as stats_module
+from locust.user.inspectuser import get_ratio
 from html import escape
 from json import dumps
 from .runners import MasterRunner, STATE_STOPPED, STATE_STOPPING

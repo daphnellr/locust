@@ -1,3 +1,3 @@
-from .main import main
+from locust.main import main
 
 main()

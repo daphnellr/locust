@@ -36,8 +36,8 @@ except ImportError:
 
 from types import FrameType
 
-from .exception import CatchResponseError
-from .event import Events
+from locust.exception import CatchResponseError
+from locust.event import Events
 
 import logging
 

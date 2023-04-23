@@ -26,7 +26,7 @@ from .user.inspectuser import get_ratio
 from .util.cache import memoize
 from .util.rounding import proper_round
 from .util.timespan import parse_timespan
-from .html import get_html_report
+from .lhtml import get_html_report
 from flask_cors import CORS
 
 if TYPE_CHECKING:

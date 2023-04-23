@@ -26,7 +26,7 @@ from .user.inspectuser import print_task_ratio, print_task_ratio_json
 from .util.timespan import parse_timespan
 from .exception import AuthCredentialsError
 from .input_events import input_listener
-from .html import get_html_report
+from .lhtml import get_html_report
 from .util.load_locustfile import load_locustfile
 
 version = locust.__version__
@@ -423,7 +423,7 @@ See https://github.com/locustio/locust/wiki/Installation#increasing-maximum-numb
         # does something wild, like calling sys.exit() in the locustfile
         atexit.register(input_listener_greenlet.kill, block=True)
 
-    def shutdown():
+    def exitshutdown():
         """
         Shut down locust by firing quitting event, printing/writing stats and exiting
         """
